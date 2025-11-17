@@ -26,12 +26,10 @@
 <meta property="og:site_name" content="Sun&#39;s blogs">
 <meta property="og:description" content="[TOC] hexo官方文档：https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F; 1. 环境搭建 Windows机器建议使用WSL安装Linux  01、安装 Node.js 安装NVM： 1curl -o- https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;nvm-sh&#x2F;nvm&#x2F;v0.39.7&#x2F;install.sh | bash  安装完成后，需要重新加载shell配置（如">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://sunsh-x.github.io/pic.jpg">
 <meta property="article:published_time" content="2021-10-17T09:30:02.000Z">
-<meta property="article:modified_time" content="2025-11-17T15:45:39.075Z">
+<meta property="article:modified_time" content="2025-11-17T15:59:46.268Z">
 <meta property="article:author" content="sunsh">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://sunsh-x.github.io/pic.jpg">
   
   
   
@@ -236,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.7k 字
+          2.9k 字
         
       </span>
     
@@ -247,7 +245,7 @@
         
         
         
-          23 分钟
+          25 分钟
         
       </span>
     
@@ -392,11 +390,14 @@
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs stylus">source/_posts/我的新文章/<br>  pic<span class="hljs-selector-class">.jpg</span><br>  song<span class="hljs-selector-class">.mp3</span><br>  <span class="hljs-selector-tag">video</span>.mp4<br></code></pre></td></tr></table></figure>
 
 <hr>
-<h4 id="📌-2-1-插入图片"><a href="#📌-2-1-插入图片" class="headerlink" title="📌 2.1 插入图片"></a>📌 2.1 插入图片</h4><p><img src="/pic.jpg" srcset="/img/loading.gif" lazyload alt="示例图片"></p>
+<h4 id="📌-2-1-插入图片"><a href="#📌-2-1-插入图片" class="headerlink" title="📌 2.1 插入图片"></a>📌 2.1 插入图片</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">![示例图片](pic.jpg)<br></code></pre></td></tr></table></figure>
+
 <hr>
-<h4 id="📌-2-2-插入音频（mp3）"><a href="#📌-2-2-插入音频（mp3）" class="headerlink" title="📌 2.2 插入音频（mp3）"></a>📌 2.2 插入音频（mp3）</h4><p><audio src="song.mp3" controls></audio></p>
+<h4 id="📌-2-2-插入音频（mp3）"><a href="#📌-2-2-插入音频（mp3）" class="headerlink" title="📌 2.2 插入音频（mp3）"></a>📌 2.2 插入音频（mp3）</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;song.mp3&quot;</span> <span class="hljs-attr">controls</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
 <hr>
-<h4 id="📌-2-3-插入视频（mp4）"><a href="#📌-2-3-插入视频（mp4）" class="headerlink" title="📌 2.3 插入视频（mp4）"></a>📌 2.3 插入视频（mp4）</h4><p><video src="video.mp4" controls width="600"></video></p>
+<h4 id="📌-2-3-插入视频（mp4）"><a href="#📌-2-3-插入视频（mp4）" class="headerlink" title="📌 2.3 插入视频（mp4）"></a>📌 2.3 插入视频（mp4）</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;video.mp4&quot;</span> <span class="hljs-attr">controls</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;600&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
 <p>这些路径是相对路径，Hexo 会自动转成正确的 URL。</p>
 <h4 id="2-4-部署更新"><a href="#2-4-部署更新" class="headerlink" title="2.4 部署更新"></a>2.4 部署更新</h4><ol>
 <li><p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p>
